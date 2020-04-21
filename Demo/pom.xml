@@ -25,24 +25,25 @@
 		</dependency>
 	</dependencies>
 	<build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M4</version>
-        <configuration>
-          <systemProperties>
-            <property>
-              <name>PARABANK_BASE_URL</name>
-             <!--   <value>http://gamora.parasoft.com:8091</value> -->
-            </property>
-            <property>
-              <name>webdriver.chrome.driver</name>
-             <!--   <value>C:\\Selenic\\webdrivers\\chromedriver.exe</value> -->
-            </property>
-          </systemProperties>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<systemProperties>
+						<property>
+							<name>PARABANK_BASE_URL</name>
+						<!-- 	<value>http://gamora.parasoft.com:8091</value> -->
+						</property>
+						<property>
+							<name>webdriver.chrome.driver</name>
+							<!-- <value>C:\\Selenic\\webdrivers\\chromedriver.exe</value> -->
+							<value>src\\test\\resources\\chromedriver.exe</value>
+						</property>
+					</systemProperties>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
