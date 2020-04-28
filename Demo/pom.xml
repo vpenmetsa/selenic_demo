@@ -31,15 +31,20 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M4</version>
 				<configuration>
+					<!-- <includes>
+						<include>**/*Test.java</include>
+					</includes>
+					<excludes>
+						<exclude>**/AccountsTest.java</exclude>
+					</excludes> -->
 					<systemProperties>
 						<property>
 							<name>PARABANK_BASE_URL</name>
-						<!-- 	<value>http://gamora.parasoft.com:8091</value> -->
+							<!-- <value>http://gamora.parasoft.com:8091</value> -->
 						</property>
 						<property>
 							<name>webdriver.chrome.driver</name>
-							<!-- <value>C:\\Selenic\\webdrivers\\chromedriver.exe</value> -->
-							<value>src\\test\\resources\\chromedriver.exe</value>
+							<!-- <value>src\\test\\resources\\chromedriver.exe</value> -->
 						</property>
 					</systemProperties>
 				</configuration>
