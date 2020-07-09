@@ -22,6 +22,7 @@
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
+			<!-- <version>4.0.0-alpha-6</version> -->
 		</dependency>
 	</dependencies>
 	<build>
@@ -40,11 +41,11 @@
 					<systemProperties>
 						<property>
 							<name>PARABANK_BASE_URL</name>
-							<!-- <value>http://gamora.parasoft.com:8091</value> -->
+							<value>http://gamora.parasoft.com:8091</value>
 						</property>
 						<property>
 							<name>webdriver.chrome.driver</name>
-							<!-- <value>src\\test\\resources\\chromedriver.exe</value> -->
+							<value>src\\test\\resources\\chromedriver.exe</value>
 						</property>
 					</systemProperties>
 				</configuration>

@@ -3,8 +3,10 @@
  */
 package com.parabank.retail;
 
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -41,6 +43,7 @@ public class AccountsTest {
 	 *
 	 * Parasoft recorded Selenium test on Sun Oct 20 2019 14:09:30 GMT-0400 (Eastern Daylight Time)
 	 */
+	//@RepeatedTest(5)
 	@Test
 	public void testAccountOverview() throws Throwable {
 		driver.get(System.getProperty("PARABANK_BASE_URL", PARABANK_BASE_URL) + "/parabank/index.htm");
