@@ -38,14 +38,14 @@ public class ParaBankWelcomeOnlineBankingPage {
 
 	public ParaBankWelcomeOnlineBankingPage(WebDriver driver) {
 		this.driver = driver;
-		/*
-		 * WebDriverWait wait = new WebDriverWait(driver,
-		 * DEFAULT_WAIT_FOR_ELEMENT_TIMEOUT);
-		 * wait.ignoring(StaleElementReferenceException.class);
-		 * 
-		 * Arrays.stream(TITLE_WORDS).forEach(word -> {
-		 * wait.until(attributeContains(By.tagName("title"), "innerHTML", word)); });
-		 */		 
+		
+		  WebDriverWait wait = new WebDriverWait(driver,
+		  DEFAULT_WAIT_FOR_ELEMENT_TIMEOUT);
+		  wait.ignoring(StaleElementReferenceException.class);
+		  
+		  Arrays.stream(TITLE_WORDS).forEach(word -> {
+		  wait.until(attributeContains(By.tagName("title"), "innerHTML", word)); });
+		 		 
 		PageFactory.initElements(driver, this);
 	}
 

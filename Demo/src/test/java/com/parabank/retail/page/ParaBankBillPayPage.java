@@ -55,13 +55,13 @@ public class ParaBankBillPayPage {
 
 	public ParaBankBillPayPage(WebDriver driver) {
 		this.driver = driver;
-		/*
-		 * WebDriverWait wait = new WebDriverWait(driver,
-		 * DEFAULT_WAIT_FOR_ELEMENT_TIMEOUT);
-		 * 
-		 * Arrays.stream(TITLE_WORDS).forEach(word -> {
-		 * wait.until(attributeContains(By.tagName("title"), "innerHTML", word)); });
-		 */		 
+		
+		  WebDriverWait wait = new WebDriverWait(driver,
+		  DEFAULT_WAIT_FOR_ELEMENT_TIMEOUT);
+		  
+		  Arrays.stream(TITLE_WORDS).forEach(word -> {
+		  wait.until(attributeContains(By.tagName("title"), "innerHTML", word)); });
+		 		 
 		PageFactory.initElements(driver, this);
 	}
 
